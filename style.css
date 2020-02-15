@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* take up the whole page with html/body/wrapper div */
 html,
 body,
 .wrapper {
@@ -12,17 +13,20 @@ body,
   padding: 0;
 }
 
+/* bodys font and background color */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
+/* everything in div wrapper has padding left/right/top */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/* attributes of header text */
 header {
   text-align: center;
   padding: 20px;
@@ -30,6 +34,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* attributes of card area */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -42,6 +47,7 @@ header {
   padding: 30px 40px;
 }
 
+/* attributes of box following header content */
 .card-header::after {
   content: " ";
   display: block;
@@ -50,14 +56,17 @@ header {
   height: 2px;
 }
 
+/* body condent */
 .card-body {
   min-height: 100px;
 }
 
+/* footer content */
 .card-footer {
   text-align: center;
 }
 
+/* attributes before footer */
 .card-footer::before {
   content: " ";
   display: block;
@@ -66,12 +75,14 @@ header {
   height: 2px;
 }
 
+/* attributes after the footer */
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
 
+/* attributes of button */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -88,15 +99,18 @@ header {
   cursor: pointer;
 }
 
+/* attribbute of button disabled */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
+/* unknown */
 .float-right {
   float: right;
 }
 
+/* attributes of password box */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +132,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* media query to adjust button/password area on smaller screen size */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -130,6 +145,7 @@ button[disabled] {
   }
 }
 
+/* media query to adjust button size again on 'smallest' screen */
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
