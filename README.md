@@ -4,7 +4,8 @@ This page uses javaScript to generate a random password within a user's paramete
 [Click here to live link](https://mwturner611.github.io/Password_Generator/)
 
 # Contributors
-* mwturner611
+* mwturner611 - creation of javascript PW generator code
+* Unknown author - original file layout
 
 
 # Technology
