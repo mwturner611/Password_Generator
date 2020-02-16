@@ -11,21 +11,21 @@ This page uses javaScript to generate a random password within a user's paramete
 JavaScript, HTML, CSS
 
 # About
-This site is designed to generate a password for users following these steps:
-1. Click the "Generate Password" button
-2. Follow the prompts asking for parameters of the password
-    * Length
-    * Include numbers
-    * Include special Characters
-    * Inlcude uppercase
-    * Include lowercase
-3. See resulting generated password
+This site is designed to generate a password for users. 
 
 # License
 This project is licensed under The MIT License (MIT).
 
 # How to use this code
-This code is a portfolio page's layout.  Feel free to use it for your own portfolio page as a starting place.
+1. Click the "Generate Password" button
+2. Follow the prompts asking for parameters of the password
+    * #of Characters
+    * Include/exclude numbers
+    * Include/exclude special Characters
+    * Inlcude/exclude uppercase
+    * Include/exclude lowercase
+3. See resulting generated password
+
 
 # Contributing Guidelines
 All contributions and suggestions are welcome! For direct contributions, please fork the repository and file a pull request.

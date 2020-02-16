@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 var numberList = ["0","1","2","3","4","5","6","7","8","9"]
 var ucLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var lcLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","t","u","v","w","x","y","z"];
-var specCharacters = ["@","%","+","/","!","#","$","^","?","*",",","{","}"];
+var specCharacters = ["@","%","+","/","!","#","$","^","?","*","{","}"];
 var aNumeric;
 var aUpperCase;
 var aLowCase;
@@ -61,7 +61,7 @@ function oneNewCharacter(a){
 
   // // find random special character
   if (aSpecCharacter){
-    var nbr4 = Math.floor((Math.random() * 14) + 0);
+    var nbr4 = Math.floor((Math.random() * 12) + 0);
     var nextOne4 = specCharacters[nbr4];
     newOne.push(nextOne4);
   }
@@ -106,6 +106,7 @@ function generatePassword() {
       // while loop to continue to initiate function getting new random characters until right PW length 
       while (nbrCharacters > passwordArray.length){
         oneNewCharacter(passwordArray);
+        console.log(passwordArray);
       }
       
       // reformat varaiable so it will allow join. Join on next line.
@@ -114,7 +115,7 @@ function generatePassword() {
          
     }
   }
-  
+
   // restart password process because user didn't enter eligible 
   else {
     generatePassword();
