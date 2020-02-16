@@ -2,9 +2,11 @@
 var generateBtn = document.querySelector("#generate");
 
 // Define arrays
-var nbrs = [0,1,2,3,4,5,6,7,8,9]
-var ucLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-var lcLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","t","u","v","w","x","y","z"]
+var nbrs = [0,1,2,3,4,5,6,7,8,9];
+var ucLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var lcLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","t","u","v","w","x","y","z"];
+var specCharacters = ["@","%","+","/","!","#","$","^","?","*","(",")","[","]","{","}"];
+var arrayOptions = [nbrs,ucLetters,lcLetters,specCharacters];
 
 
 // Define attributes of generatePassword function
