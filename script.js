@@ -32,6 +32,7 @@ function trueAnswerCount(){
   if (aSpecCharacter){
     truths = truths + 1;
   }
+  console.log(truths);
 }
 
 // function find a random value to add to password
@@ -70,6 +71,10 @@ function oneNewCharacter(a){
   var nbr5 = Math.floor((Math.random() * truths));
   var sendIt = newOne[nbr5];
   a.push(sendIt);
+  console.log(nbr4);
+  console.log(nextOne4);
+  console.log(sendIt);
+  
 
 }
 
@@ -118,6 +123,7 @@ function generatePassword() {
 
   // restart password process because user didn't enter eligible 
   else {
+    alert("That's not an eligible value, please restart.")
     generatePassword();
   }
   
