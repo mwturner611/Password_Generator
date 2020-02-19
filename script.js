@@ -1,11 +1,13 @@
-// Identify button location on screen and assign generateBtn var name
+// Identify button location on screen and assign variable
 var generateBtn = document.querySelector("#generate");
 
-// Define arrays
+// Define arrays for random selection
 var numberList = ["0","1","2","3","4","5","6","7","8","9"]
 var ucLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var lcLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","t","u","v","w","x","y","z"];
 var specCharacters = ["@","%","+","/","!","#","$","^","?","*","{","}"];
+
+// define variables
 var aNumeric;
 var aUpperCase;
 var aLowCase;
@@ -13,7 +15,7 @@ var aSpecCharacter;
 var truths = 0;
 
 
-// calc number of trues in variable truth
+// function to count the number of true responses in variable true
 function trueAnswerCount(){
   truths = 0;  
 
@@ -32,7 +34,7 @@ function trueAnswerCount(){
   if (aSpecCharacter){
     truths = truths + 1;
   }
-  console.log(truths);
+  
 }
 
 // function find a random value to add to password
@@ -71,10 +73,6 @@ function oneNewCharacter(a){
   var nbr5 = Math.floor((Math.random() * truths));
   var sendIt = newOne[nbr5];
   a.push(sendIt);
-  console.log(nbr4);
-  console.log(nextOne4);
-  console.log(sendIt);
-  
 
 }
 
@@ -100,10 +98,10 @@ function generatePassword() {
     aSpecCharacter = confirm("Do you want Special Characters? OK=YES CANCEL=NO");
 
     trueAnswerCount();
-    // test if none of the pasword characteristics were confirmed and restart the process
+    // test if none of the pasword characteristics were confirmed. If not, tell user, refresh page
     if (truths < 1) {
-        alert("you didn't select any attributes! Please start over")
-        generatePassword();
+        alert("Sorry, you didn't select any attributes. Please start over by clicking Generate Password.")
+        location.reload();
     }
 
     // continue password process
@@ -121,10 +119,10 @@ function generatePassword() {
     }
   }
 
-  // restart password process because user didn't enter eligible 
+  // alert user they didn't enter a numeric value between 8 & 128 and refresh page 
   else {
-    alert("That's not an eligible value, please restart.")
-    generatePassword();
+    alert("Sorry, you didn't enter a numeric value between 8 and 128. Please restart by clicking Generate Password.")
+    location.reload();
   }
   
 }
