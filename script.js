@@ -101,7 +101,8 @@ function generatePassword() {
     // test if none of the pasword characteristics were confirmed. If not, tell user, refresh page
     if (truths < 1) {
         alert("Sorry, you didn't select any attributes. Please start over by clicking Generate Password.")
-        location.reload();
+        return ""
+        
     }
 
     // continue password process
@@ -122,7 +123,8 @@ function generatePassword() {
   // alert user they didn't enter a numeric value between 8 & 128 and refresh page 
   else {
     alert("Sorry, you didn't enter a numeric value between 8 and 128. Please restart by clicking Generate Password.")
-    location.reload();
+    return ""
+    
   }
   
 }
